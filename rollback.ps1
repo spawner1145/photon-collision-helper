@@ -3,6 +3,10 @@ param(
 )
 
 $ErrorActionPreference = 'Stop'
+$migration = Join-Path $PSScriptRoot 'integration/output-collision-migration-initial.json'
+if ((Test-Path -LiteralPath $migration) -and (Get-Content -LiteralPath $migration -Raw | ConvertFrom-Json).completed) {
+    throw 'Multiple formal effects now depend on this helper. This ring-only rollback refuses to remove it. Restore all projects and installed resources listed in the batch migration backup before uninstalling.'
+}
 $game = (Resolve-Path -LiteralPath $GameDirectory).Path
 $output = (Resolve-Path -LiteralPath (Join-Path $PSScriptRoot '../output')).Path
 $backup = Join-Path $output 'backups/须佐环斩_算法性能优化前_20261015_141539/须佐能乎_环斩冲击'

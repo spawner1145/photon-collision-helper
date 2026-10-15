@@ -1,26 +1,16 @@
 # Photon Collision Helper 0.1.4
 
-工程目录：`D:/code/photon mcp/photon-collision-helper`。特效与备份仍位于项目根目录下的 `output`，游戏 mods 中已安装的组件不受工程移动影响。
-
-可独立安装／移除的 **NeoForge 1.21.1 客户端碰撞扩展**。不修改 Photon 源码、不替换 Photon JAR、不使用 Mixin 或核心补丁。仅驱动特效表现，**不造成伤害、不破坏方块、不替服务器判定命中**。
+可独立安装／移除的 **NeoForge 1.21.1 客户端碰撞扩展**。
 
 ## 安装与自动发现
+
+首次构建时将 `local.properties.example` 复制为 `local.properties`，填写 Minecraft 实例目录（包含 `mods` 的文件夹，路径用 `/`）。本机路径不再写入受 Git 跟踪的 `gradle.properties`；也可用 `-PgameDir=...` 或环境变量 `PHOTON_GAME_DIR` 指定，优先级依次为命令行／Gradle 属性、环境变量、本地配置，未配置时查找工程内的 `run`。
 
 依赖当前游戏的 Photon 2.2.8、LDLib2 2.2.42、NeoForge 21.1.252、Java 21。其他版本未经兼容性验证。
 
 构建产物：`build/libs/photon-collision-helper-neoforge-1.21.1-0.1.4.jar`。复制至游戏实例的 `mods` 后重启 Minecraft。升级时先将旧 helper JAR 移出 mods，不能同时保留两个版本。组件通过 `@LDLRegisterClient(registry="photon:fx_object")` 注册 `collision_emitter`，由 Photon 现有扫描器加载；普通粒子的编辑器入口由独立组件通过 NeoForge 客户端事件自动添加，不需要修改 Photon、MCP 或在每次启动时执行脚本。
 
-也可运行 `install.ps1` 安装，并在 `installation.json` 保存 helper 与原始 Photon 的 SHA-256。`rollback.ps1` 会先备份当前环斩、恢复原生后端，再删除 helper；回退应先退出游戏，重启后生效。脚本默认使用当前游戏实例，可通过 `-GameDirectory` 指定其他兼容实例。
-
-MCP 正常工作流：
-
-1. `photon_list_object_types` 可发现 `collision_emitter`。
-2. `photon_describe_object_type(type="collision_emitter")` 返回继承的粒子配置和完整 `data.collision` 类型结构。
-3. 使用现有对象创建／编辑接口创建该类型，或将工程中的检测发射器转换为该类型。材质、形状、Transform 和 Timeline 动画仍用 Photon 原生接口。
-
-**不会偷偷替换所有原生发射器**：旧 `particle_emitter` 默认行为不变，需要碰撞扩展的对象才使用新类型。环斩的三个检测发射器已接入；其气浪仍纯视觉，不做碰撞查询。其他特效未批量改写。
-
-`integration/mcp-schema.json` 保存了实测 MCP 返回的结构；实际编写配置请优先重新描述类型，而不是猜字段。
+也可运行 `install.ps1` 安装，并在 `installation.json` 保存 helper 与原始 Photon 的 SHA-256。`rollback.ps1` 原来只处理环斩；批量迁移后它会安全拒绝直接卸载，避免其余七套特效缺少类型。应先退出游戏，按批量备份的 `migration.json` 恢复所有依赖组件的工程及安装资源，再移除 helper，重启后生效。脚本默认使用当前游戏实例，可通过 `-GameDirectory` 指定其他兼容实例。
 
 ## 编辑器入口
 
@@ -91,24 +81,3 @@ ID 列表用逗号分隔，例如 `minecraft:zombie,minecraft:skeleton`，不是
 这是平移的世界轴对齐盒／点扫掠，不是任意三角网格连续碰撞；不自动模拟粒子 Local 空间父节点瞬移形成的轨迹。实体线性扫掠也是近似，可关闭。客户端只知道已加载、已同步到客户端的方块和实体。同一个模拟 tick 内发生的世界修改在下一模拟 tick 反映。
 
 `FastCollisionEmitter.collisionStatistics()` 提供累计命中数、粒子模拟耗时、共享缓存统计及最近 128 次接触的目标、位置、法线和 tick，MCP 的原生执行接口可直接读取。`CollisionFrame.nearest(...)` 是可复用的扫掠查询接口；零位移配合非零 AABB 可做重叠查询。
-
-## 验证与回退
-
-```powershell
-& '../PhotonMCP-1.21/gradlew.bat' -p . --offline --console=plain test jar
-node integration/verify.mjs
-node integration/verify_ring_entities.mjs
-node integration/verify_native_editor.mjs
-```
-
-游戏内集成测试仅使用临时虚拟世界，不修改真实地图或造成伤害。几何单元测试、缓存／方块形状／实体过滤／流体／高速 DDA／持久化测试、六种响应与环斩实体命中测试报告都保存在 `integration`。`--reload` 仅是开发时的临时类加载验证，不是用户安装步骤。
-
-`integration/verify_native_editor.mjs` 使用独立临时 FXEditor 验证普通粒子的物理栏入口、不重复注入、按钮实际回调、30 项控件、默认行为、原生注册表不变、配置与层级完整、编辑及类型转换的撤销／重做、保存回读。`--candidate` 使用唯一副本 JAR 做候选实现验证，不替换已加载 JAR，也不等同于正式启动自动注册验证。
-
-0.1.0 的正式启动验证已通过，`integration/startup-verification.json` 保存当时证据。0.1.2 恢复原版默认行为并关闭环斩实体碰撞，新增单元测试检查所有公开碰撞字段同时有 Configurable／Persisted 注解，原版配置与原生粒子类型的游戏内检查位于 `integration/verify_particles.groovy`。安装后仍需重启复测。本实例保留 `config/fml.toml` 的 `earlyWindowControl=false` 启动规避配置，未修改 Photon 本体。
-
-`integration/audit_assets.py` 对比 `../output` 中的原生备份，确认网格、七个 Shader Graph、噪声贴图、主 Timeline、三片探针的尺寸／位置／发射率及两个碰撞子工程均未更改；只有三个探针新增了扩展类型及设置。
-
-环斩的探针数量、范围、高度和视觉 Shader 均保留；性能结果在 `../output/须佐能乎_环斩冲击/editor/performance-helper-final.json`，对照 `performance-cpu-diagnosis.json`。这些是编辑器场景 CPU tick 测量，不代表所有地图／GPU／密集实体场景的 FPS 保证。大面积命中后的许多体积爆炸仍可能有 GPU 开销。
-
-卸载前先恢复原生碰撞环斩备份：`../output/backups/须佐环斩_算法性能优化前_20261015_141539/须佐能乎_环斩冲击`，包括工程、游戏 loose assets 和 fxpack，然后移除 helper JAR 并重启。未恢复时打开扩展类型工程会缺少对象类型。Photon 原始 JAR 不需替换或回滚。
