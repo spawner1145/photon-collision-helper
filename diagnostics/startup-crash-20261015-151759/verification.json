@@ -1,8 +1,0 @@
-{
-  "configurationOnly": true,
-  "onlySettingChanged": "earlyWindowControl: true -> false",
-  "photonUnchanged": true,
-  "helperUnchanged": true,
-  "startupVerified": true,
-  "cause": "Early display resize callback initializes Photon IrisCompat before FML ModList exists"
-}
