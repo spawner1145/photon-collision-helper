@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "nativeEntryInPhysics": true,
+  "noDuplicateEntry": true,
+  "nativeRegistryUnchanged": true,
+  "untouchedUntilClick": true,
+  "buttonWorks": true,
+  "fieldsEditable": 30,
+  "preservesConfigTransformChildrenOrderAndTimeline": true,
+  "nativeDefaultsPreserved": true,
+  "editUndoRedoVerified": true,
+  "conversionUndoRedoVerified": true,
+  "savedSettingsReloaded": true,
+  "realProjectUnchanged": true,
+  "validationLoader": "java.net.URLClassLoader"
+}

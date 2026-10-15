@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "cases": [
+    "cached voxel shapes reused within tick and invalidated next tick",
+    "long diagonal DDA across negative coordinates and tile corners",
+    "editor render-only block filter does not hide physical obstacles",
+    "partial slabs fences and stairs preserve actual voxel bounds",
+    "fluids opt in independently of solid blocks",
+    "entities ownership living nonliving exact type filters",
+    "moving entity continuous sweep and fractional timestep",
+    "large entities overflow spatial index rather than disappear",
+    "shared dedup cooldown groups and world change",
+    "cache capacity overflow recomputes without dropping collisions",
+    "block id allowlist and denylist",
+    "proxy world chunk sections and proxy entity index",
+    "seeded spatial index agrees with brute force exact sweeps",
+    "native codec roundtrip includes collision settings"
+  ],
+  "realWorldUnchanged": true
+}

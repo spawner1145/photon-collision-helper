@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "cases": [
+    "REMOVE stops at exact surface and emits one hit",
+    "STOP collision dedup never allows falling through the same surface",
+    "BOUNCE reflects remainder and stored velocity",
+    "INHERIT uses native removal flag",
+    "SLIDE preserves tangential movement",
+    "PIERCE visits multiple surfaces in chronological order",
+    "contact budget stops untested movement rather than tunneling",
+    "stationary overlap supports sensor volumes",
+    "high speed projectile never hits the native velocity skip path"
+  ],
+  "realWorldUnchanged": true
+}

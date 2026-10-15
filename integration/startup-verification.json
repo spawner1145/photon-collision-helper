@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "helperInstalled": true,
+  "helperModFile": "D:\\game\\.minecraft\\versions\\1.21.1-NeoForge_21.1.252\\mods\\photon-collision-helper-neoforge-1.21.1-0.1.0.jar",
+  "registeredType": "collision_emitter",
+  "implementation": "dev.photoncollision.FastCollisionEmitter",
+  "classLoader": "cpw.mods.modlauncher.TransformingClassLoader",
+  "module": "photon_collision_helper",
+  "temporaryLoaderUsed": false,
+  "worldLoaded": true,
+  "playerPresent": true,
+  "glError": 0,
+  "verifiedAt": "2026-10-15T07:28:36.957Z",
+  "mcpDiscoveryVerified": true,
+  "mcpSchemaVerified": true,
+  "helperResponseTests": "integration/particle-verification.json",
+  "queryTests": "integration/frame-verification.json",
+  "ringEntityTests": "integration/ring-entity-verification.json",
+  "whiteBladeBandTests": "../须佐能乎_环斩冲击/editor/collision-band-verification.json",
+  "shaderTests": "../须佐能乎_环斩冲击/editor/shader-verification.json"
+}

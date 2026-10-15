@@ -1,0 +1,2473 @@
+{
+  "json": {
+    "data": {
+      "collision": {
+        "entityFilter": "LIVING",
+        "deduplicationGroup": "",
+        "maxHitsPerStep": 32,
+        "fluidEffect": "",
+        "entityEffect": "",
+        "maxBounces": 4,
+        "excludedBlockTypes": "",
+        "ignoreOwner": 1,
+        "sweepEntityMotion": 0,
+        "contactCooldownTicks": 0,
+        "ownerEntityId": -1,
+        "fluids": 0,
+        "includedBlockTypes": "",
+        "cachedTileLimit": 16384,
+        "blocks": 1,
+        "excludedEntityTypes": "",
+        "deduplicateEmitterHits": 0,
+        "deduplicateParticleHits": 1,
+        "alignEffectsToNormal": 0,
+        "blockEffect": "",
+        "restitution": 0.32,
+        "entities": 1,
+        "response": "INHERIT",
+        "includedEntityTypes": "",
+        "ignoreSpectators": 1,
+        "pickableOnly": 0,
+        "detectStationaryOverlaps": 0,
+        "rayProbe": 0
+      },
+      "transform": {
+        "_childrenId": [],
+        "_parentId": "_NULL_",
+        "localPosition": [
+          0,
+          0,
+          0
+        ],
+        "id": "7bd39a0c-8ef3-4302-86e5-fa98ed8b5ece",
+        "localScale": [
+          1,
+          1,
+          1
+        ],
+        "localRotation": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "name": "collision_emitter",
+      "config": {
+        "simulationSpace": "Local",
+        "renderer": {
+          "useGPUInstance": 0,
+          "velocityScale": 0,
+          "lengthScale": 2,
+          "facingMode": "DEFAULT",
+          "facingDirection": {
+            "mode": "DERIVE_FROM_VELOCITY",
+            "minSpeedThreshold": 0.01,
+            "customDirection": [
+              0,
+              1,
+              0
+            ]
+          },
+          "customMask": {
+            "_enable": 0
+          },
+          "shade": 1,
+          "layer": "Translucent",
+          "renderMode": "Billboard",
+          "compositeMode": "INHERIT",
+          "useBlockUV": 1,
+          "tangent": 0,
+          "orderInLayer": 0,
+          "vertexSortingMode": "NONE",
+          "materials": {
+            "uid": 1,
+            "payload": [
+              {
+                "renderStateSource": "MATERIAL",
+                "depthMask": 0,
+                "material": {
+                  "data": {
+                    "pixelArt": {
+                      "_enable": 0
+                    },
+                    "texture": "photon:textures/particle/circle.png",
+                    "hdr": {
+                      "color": [
+                        0,
+                        0,
+                        0,
+                        1
+                      ]
+                    },
+                    "discardThreshold": 0.1,
+                    "hdrMode": "ADDITIVE",
+                    "softParticles": {
+                      "_enable": 0
+                    },
+                    "litParticles": {
+                      "_enable": 0
+                    }
+                  },
+                  "type": "texture"
+                },
+                "blendMode": {
+                  "dstAlphaFactor": "ZERO",
+                  "srcAlphaFactor": "ONE",
+                  "enableBlend": 1,
+                  "blendFunc": "ADD",
+                  "dstColorFactor": "ONE_MINUS_SRC_ALPHA",
+                  "srcColorFactor": "SRC_ALPHA"
+                },
+                "depthTest": 1,
+                "cull": 1
+              }
+            ]
+          },
+          "modelPivot": [
+            0,
+            0,
+            0
+          ],
+          "cull": {
+            "_enable": 0
+          }
+        },
+        "sizeBySpeed": {
+          "_enable": 0
+        },
+        "rotationBySpeed": {
+          "_enable": 0
+        },
+        "trails": {
+          "araConfig": {
+            "cornerRoundness": 5,
+            "physicsSetting": {
+              "_enable": 0
+            },
+            "renderer": {
+              "useGPUInstance": 0,
+              "compositeMode": "INHERIT",
+              "orderInLayer": 0,
+              "vertexSortingMode": "NONE",
+              "materials": {
+                "uid": 1,
+                "payload": [
+                  {
+                    "renderStateSource": "MATERIAL",
+                    "depthMask": 0,
+                    "material": {
+                      "data": {
+                        "pixelArt": {
+                          "_enable": 0
+                        },
+                        "texture": "photon:textures/particle/circle.png",
+                        "hdr": {
+                          "color": [
+                            0,
+                            0,
+                            0,
+                            1
+                          ]
+                        },
+                        "discardThreshold": 0.1,
+                        "hdrMode": "ADDITIVE",
+                        "softParticles": {
+                          "_enable": 0
+                        },
+                        "litParticles": {
+                          "_enable": 0
+                        }
+                      },
+                      "type": "texture"
+                    },
+                    "blendMode": {
+                      "dstAlphaFactor": "ZERO",
+                      "srcAlphaFactor": "ONE",
+                      "enableBlend": 1,
+                      "blendFunc": "ADD",
+                      "dstColorFactor": "ONE_MINUS_SRC_ALPHA",
+                      "srcColorFactor": "SRC_ALPHA"
+                    },
+                    "depthTest": 1,
+                    "cull": 1
+                  }
+                ]
+              },
+              "customMask": {
+                "_enable": 0
+              },
+              "cull": {
+                "_enable": 0
+              },
+              "layer": "Translucent"
+            },
+            "thickness": 0.5,
+            "initialThickness": 1,
+            "section": {
+              "_enable": 0
+            },
+            "space": "World",
+            "duration": 100,
+            "uvFactor": 1,
+            "highQualityCorners": 0,
+            "minDistance": 0.05,
+            "sorting": "OlderOnTop",
+            "tileAnchor": 1,
+            "initialVelocity": [
+              0,
+              0,
+              0
+            ],
+            "timeInterval": 0.05,
+            "thicknessOverLength": {
+              "data": {
+                "number": 1
+              },
+              "type": "constant"
+            },
+            "thicknessOverTime": {
+              "data": {
+                "number": 1
+              },
+              "type": "constant"
+            },
+            "looping": 1,
+            "colorOverTime": {
+              "data": {
+                "number": -1
+              },
+              "type": "color"
+            },
+            "thicknessOverSegmentTime": {
+              "data": {
+                "number": 1
+              },
+              "type": "constant"
+            },
+            "additionalGPUDataSetting": {
+              "_enable": 0
+            },
+            "colorOverSegmentTime": {
+              "data": {
+                "number": -1
+              },
+              "type": "color"
+            },
+            "textureMode": "Stretch",
+            "smoothness": 1,
+            "colorOverLength": {
+              "data": {
+                "number": -1
+              },
+              "type": "color"
+            },
+            "customSpace": "",
+            "initialColor": -1,
+            "uvWidthFactor": 1,
+            "smoothingDistance": 0.05,
+            "time": 1,
+            "alignment": "View",
+            "emit": 1
+          },
+          "_enable": 0,
+          "config": {
+            "widthOverTrail": {
+              "data": {
+                "number": 0.5
+              },
+              "type": "constant"
+            },
+            "renderer": {
+              "useGPUInstance": 0,
+              "compositeMode": "INHERIT",
+              "orderInLayer": 0,
+              "vertexSortingMode": "NONE",
+              "materials": {
+                "uid": 1,
+                "payload": [
+                  {
+                    "renderStateSource": "MATERIAL",
+                    "depthMask": 0,
+                    "material": {
+                      "data": {
+                        "pixelArt": {
+                          "_enable": 0
+                        },
+                        "texture": "photon:textures/particle/circle.png",
+                        "hdr": {
+                          "color": [
+                            0,
+                            0,
+                            0,
+                            1
+                          ]
+                        },
+                        "discardThreshold": 0.1,
+                        "hdrMode": "ADDITIVE",
+                        "softParticles": {
+                          "_enable": 0
+                        },
+                        "litParticles": {
+                          "_enable": 0
+                        }
+                      },
+                      "type": "texture"
+                    },
+                    "blendMode": {
+                      "dstAlphaFactor": "ZERO",
+                      "srcAlphaFactor": "ONE",
+                      "enableBlend": 1,
+                      "blendFunc": "ADD",
+                      "dstColorFactor": "ONE_MINUS_SRC_ALPHA",
+                      "srcColorFactor": "SRC_ALPHA"
+                    },
+                    "depthTest": 1,
+                    "cull": 1
+                  }
+                ]
+              },
+              "customMask": {
+                "_enable": 0
+              },
+              "cull": {
+                "_enable": 0
+              },
+              "layer": "Translucent"
+            },
+            "looping": 1,
+            "additionalGPUDataSetting": {
+              "_enable": 0
+            },
+            "uvMode": "Stretch",
+            "colorOverTrail": {
+              "data": {
+                "gradientColor": {
+                  "a": [
+                    0,
+                    1,
+                    1,
+                    1
+                  ],
+                  "rgb": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1
+                  ]
+                }
+              },
+              "type": "gradient"
+            },
+            "duration": 100,
+            "minVertexDistance": 0.05,
+            "startDelay": 0,
+            "time": 20,
+            "lights": {
+              "blockLight": {
+                "data": {
+                  "number": 15
+                },
+                "type": "constant"
+              },
+              "_enable": 1,
+              "skyLight": {
+                "data": {
+                  "number": 15
+                },
+                "type": "constant"
+              }
+            },
+            "uvAnimation": {
+              "_enable": 0
+            },
+            "smoothInterpolation": 0
+          }
+        },
+        "startColor": {
+          "data": {
+            "number": -1
+          },
+          "type": "color"
+        },
+        "colorOverLifetime": {
+          "_enable": 0
+        },
+        "duration": 100,
+        "emission": {
+          "emissionRate": {
+            "data": {
+              "number": 0.5
+            },
+            "type": "constant"
+          },
+          "distanceRate": {
+            "data": {
+              "number": 0
+            },
+            "type": "constant"
+          },
+          "bursts": {
+            "uid": 0,
+            "payload": []
+          },
+          "emissionMode": "Exacting"
+        },
+        "lightEmission": {
+          "_enable": 0
+        },
+        "startSpeed": {
+          "data": {
+            "number": 1
+          },
+          "type": "constant"
+        },
+        "startSize": [
+          {
+            "data": {
+              "number": 0.1
+            },
+            "type": "constant"
+          },
+          {
+            "data": {
+              "number": 0.1
+            },
+            "type": "constant"
+          },
+          {
+            "data": {
+              "number": 0.1
+            },
+            "type": "constant"
+          }
+        ],
+        "physics": {
+          "bounceSpreadRate": {
+            "data": {
+              "number": 0
+            },
+            "type": "constant"
+          },
+          "bounceChance": {
+            "data": {
+              "number": 1
+            },
+            "type": "constant"
+          },
+          "gravity": {
+            "data": {
+              "number": 0
+            },
+            "type": "constant"
+          },
+          "_enable": 1,
+          "collidedFriction": {
+            "data": {
+              "number": 0.7
+            },
+            "type": "constant"
+          },
+          "removedWhenCollided": 0,
+          "hasCollision": 1,
+          "friction": {
+            "data": {
+              "number": 1
+            },
+            "type": "constant"
+          },
+          "bounceRate": {
+            "data": {
+              "number": 1
+            },
+            "type": "constant"
+          }
+        },
+        "parallelUpdate": 0,
+        "noise": {
+          "_enable": 0
+        },
+        "subEmitters": {
+          "_enable": 0
+        },
+        "velocityOverLifetime": {
+          "_enable": 0
+        },
+        "rotationOverLifetime": {
+          "_enable": 0
+        },
+        "lights": {
+          "blockLight": {
+            "data": {
+              "number": 15
+            },
+            "type": "constant"
+          },
+          "_enable": 1,
+          "skyLight": {
+            "data": {
+              "number": 15
+            },
+            "type": "constant"
+          }
+        },
+        "inheritVelocity": {
+          "_enable": 0
+        },
+        "uvAnimation": {
+          "_enable": 0
+        },
+        "startLifetime": {
+          "data": {
+            "number": 100
+          },
+          "type": "constant"
+        },
+        "lifetimeByEmitterSpeed": {
+          "_enable": 0
+        },
+        "prewarm": 0,
+        "shape": {
+          "shape": {
+            "data": {
+              "radiusThickness": 1,
+              "arc": 360,
+              "angle": 25,
+              "radius": 0.5,
+              "shapeArc": {
+                "arcMode": "Random",
+                "arcSpread": 0,
+                "arcSpeed": {
+                  "data": {
+                    "number": 1
+                  },
+                  "type": "constant"
+                }
+              }
+            },
+            "type": "cone"
+          },
+          "rotation": [
+            {
+              "data": {
+                "number": 0
+              },
+              "type": "constant"
+            },
+            {
+              "data": {
+                "number": 0
+              },
+              "type": "constant"
+            },
+            {
+              "data": {
+                "number": 0
+              },
+              "type": "constant"
+            }
+          ],
+          "scale": [
+            {
+              "data": {
+                "number": 1
+              },
+              "type": "constant"
+            },
+            {
+              "data": {
+                "number": 1
+              },
+              "type": "constant"
+            },
+            {
+              "data": {
+                "number": 1
+              },
+              "type": "constant"
+            }
+          ],
+          "position": [
+            {
+              "data": {
+                "number": 0
+              },
+              "type": "constant"
+            },
+            {
+              "data": {
+                "number": 0
+              },
+              "type": "constant"
+            },
+            {
+              "data": {
+                "number": 0
+              },
+              "type": "constant"
+            }
+          ]
+        },
+        "looping": 1,
+        "externalForces": {
+          "_enable": 0
+        },
+        "colorBySpeed": {
+          "_enable": 0
+        },
+        "startRotation": [
+          {
+            "data": {
+              "number": 0
+            },
+            "type": "constant"
+          },
+          {
+            "data": {
+              "number": 0
+            },
+            "type": "constant"
+          },
+          {
+            "data": {
+              "number": 0
+            },
+            "type": "constant"
+          }
+        ],
+        "forceOverLifetime": {
+          "_enable": 0
+        },
+        "sizeOverLifetime": {
+          "_enable": 0
+        },
+        "additionalGPUDataSetting": {
+          "_enable": 0
+        },
+        "maxParticles": 2000,
+        "customSpace": "",
+        "startDelay": {
+          "data": {
+            "number": 0
+          },
+          "type": "constant"
+        }
+      },
+      "version": 1
+    },
+    "type": "collision_emitter"
+  },
+  "snbt": "{data:{collision:{alignEffectsToNormal:0b,blockEffect:\"\",blocks:1b,cachedTileLimit:16384,contactCooldownTicks:0,deduplicateEmitterHits:0b,deduplicateParticleHits:1b,deduplicationGroup:\"\",detectStationaryOverlaps:0b,entities:1b,entityEffect:\"\",entityFilter:\"LIVING\",excludedBlockTypes:\"\",excludedEntityTypes:\"\",fluidEffect:\"\",fluids:0b,ignoreOwner:1b,ignoreSpectators:1b,includedBlockTypes:\"\",includedEntityTypes:\"\",maxBounces:4,maxHitsPerStep:32,ownerEntityId:-1,pickableOnly:0b,rayProbe:0b,response:\"INHERIT\",restitution:0.32d,sweepEntityMotion:0b},config:{additionalGPUDataSetting:{_enable:0b},colorBySpeed:{_enable:0b},colorOverLifetime:{_enable:0b},customSpace:\"\",duration:100,emission:{bursts:{payload:[],uid:0},distanceRate:{data:{number:0},type:\"constant\"},emissionMode:\"Exacting\",emissionRate:{data:{number:0.5f},type:\"constant\"}},externalForces:{_enable:0b},forceOverLifetime:{_enable:0b},inheritVelocity:{_enable:0b},lifetimeByEmitterSpeed:{_enable:0b},lightEmission:{_enable:0b},lights:{_enable:1b,blockLight:{data:{number:15},type:\"constant\"},skyLight:{data:{number:15},type:\"constant\"}},looping:1b,maxParticles:2000,noise:{_enable:0b},parallelUpdate:0b,physics:{_enable:1b,bounceChance:{data:{number:1},type:\"constant\"},bounceRate:{data:{number:1},type:\"constant\"},bounceSpreadRate:{data:{number:0},type:\"constant\"},collidedFriction:{data:{number:0.7f},type:\"constant\"},friction:{data:{number:1},type:\"constant\"},gravity:{data:{number:0},type:\"constant\"},hasCollision:1b,removedWhenCollided:0b},prewarm:0,renderer:{compositeMode:\"INHERIT\",cull:{_enable:0b},customMask:{_enable:0b},facingDirection:{customDirection:[0.0f,1.0f,0.0f],minSpeedThreshold:0.01f,mode:\"DERIVE_FROM_VELOCITY\"},facingMode:\"DEFAULT\",layer:\"Translucent\",lengthScale:2.0f,materials:{payload:[{blendMode:{blendFunc:\"ADD\",dstAlphaFactor:\"ZERO\",dstColorFactor:\"ONE_MINUS_SRC_ALPHA\",enableBlend:1b,srcAlphaFactor:\"ONE\",srcColorFactor:\"SRC_ALPHA\"},cull:1b,depthMask:0b,depthTest:1b,material:{data:{discardThreshold:0.1f,hdr:{color:[0.0f,0.0f,0.0f,1.0f]},hdrMode:\"ADDITIVE\",litParticles:{_enable:0b},pixelArt:{_enable:0b},softParticles:{_enable:0b},texture:\"photon:textures/particle/circle.png\"},type:\"texture\"},renderStateSource:\"MATERIAL\"}],uid:1},modelPivot:[0.0f,0.0f,0.0f],orderInLayer:0,renderMode:\"Billboard\",shade:1b,tangent:0b,useBlockUV:1b,useGPUInstance:0b,velocityScale:0.0f,vertexSortingMode:\"NONE\"},rotationBySpeed:{_enable:0b},rotationOverLifetime:{_enable:0b},shape:{position:[{data:{number:0},type:\"constant\"},{data:{number:0},type:\"constant\"},{data:{number:0},type:\"constant\"}],rotation:[{data:{number:0},type:\"constant\"},{data:{number:0},type:\"constant\"},{data:{number:0},type:\"constant\"}],scale:[{data:{number:1},type:\"constant\"},{data:{number:1},type:\"constant\"},{data:{number:1},type:\"constant\"}],shape:{data:{angle:25.0f,arc:360.0f,radius:0.5f,radiusThickness:1.0f,shapeArc:{arcMode:\"Random\",arcSpeed:{data:{number:1.0f},type:\"constant\"},arcSpread:0.0f}},type:\"cone\"}},simulationSpace:\"Local\",sizeBySpeed:{_enable:0b},sizeOverLifetime:{_enable:0b},startColor:{data:{number:-1},type:\"color\"},startDelay:{data:{number:0},type:\"constant\"},startLifetime:{data:{number:100},type:\"constant\"},startRotation:[{data:{number:0},type:\"constant\"},{data:{number:0},type:\"constant\"},{data:{number:0},type:\"constant\"}],startSize:[{data:{number:0.1d},type:\"constant\"},{data:{number:0.1d},type:\"constant\"},{data:{number:0.1d},type:\"constant\"}],startSpeed:{data:{number:1},type:\"constant\"},subEmitters:{_enable:0b},trails:{_enable:0b,araConfig:{additionalGPUDataSetting:{_enable:0b},alignment:\"View\",colorOverLength:{data:{number:-1},type:\"color\"},colorOverSegmentTime:{data:{number:-1},type:\"color\"},colorOverTime:{data:{number:-1},type:\"color\"},cornerRoundness:5,customSpace:\"\",duration:100,emit:1b,highQualityCorners:0b,initialColor:-1,initialThickness:1.0f,initialVelocity:[0.0f,0.0f,0.0f],looping:1b,minDistance:0.05f,physicsSetting:{_enable:0b},renderer:{compositeMode:\"INHERIT\",cull:{_enable:0b},customMask:{_enable:0b},layer:\"Translucent\",materials:{payload:[{blendMode:{blendFunc:\"ADD\",dstAlphaFactor:\"ZERO\",dstColorFactor:\"ONE_MINUS_SRC_ALPHA\",enableBlend:1b,srcAlphaFactor:\"ONE\",srcColorFactor:\"SRC_ALPHA\"},cull:1b,depthMask:0b,depthTest:1b,material:{data:{discardThreshold:0.1f,hdr:{color:[0.0f,0.0f,0.0f,1.0f]},hdrMode:\"ADDITIVE\",litParticles:{_enable:0b},pixelArt:{_enable:0b},softParticles:{_enable:0b},texture:\"photon:textures/particle/circle.png\"},type:\"texture\"},renderStateSource:\"MATERIAL\"}],uid:1},orderInLayer:0,useGPUInstance:0b,vertexSortingMode:\"NONE\"},section:{_enable:0b},smoothingDistance:0.05f,smoothness:1,sorting:\"OlderOnTop\",space:\"World\",textureMode:\"Stretch\",thickness:0.5f,thicknessOverLength:{data:{number:1.0f},type:\"constant\"},thicknessOverSegmentTime:{data:{number:1.0f},type:\"constant\"},thicknessOverTime:{data:{number:1.0f},type:\"constant\"},tileAnchor:1.0f,time:1.0f,timeInterval:0.05f,uvFactor:1.0f,uvWidthFactor:1.0f},config:{additionalGPUDataSetting:{_enable:0b},colorOverTrail:{data:{gradientColor:{a:[0.0f,1.0f,1.0f,1.0f],rgb:[0.0f,1.0f,1.0f,1.0f,1.0f,1.0f,1.0f,1.0f]}},type:\"gradient\"},duration:100,lights:{_enable:1b,blockLight:{data:{number:15},type:\"constant\"},skyLight:{data:{number:15},type:\"constant\"}},looping:1b,minVertexDistance:0.05f,renderer:{compositeMode:\"INHERIT\",cull:{_enable:0b},customMask:{_enable:0b},layer:\"Translucent\",materials:{payload:[{blendMode:{blendFunc:\"ADD\",dstAlphaFactor:\"ZERO\",dstColorFactor:\"ONE_MINUS_SRC_ALPHA\",enableBlend:1b,srcAlphaFactor:\"ONE\",srcColorFactor:\"SRC_ALPHA\"},cull:1b,depthMask:0b,depthTest:1b,material:{data:{discardThreshold:0.1f,hdr:{color:[0.0f,0.0f,0.0f,1.0f]},hdrMode:\"ADDITIVE\",litParticles:{_enable:0b},pixelArt:{_enable:0b},softParticles:{_enable:0b},texture:\"photon:textures/particle/circle.png\"},type:\"texture\"},renderStateSource:\"MATERIAL\"}],uid:1},orderInLayer:0,useGPUInstance:0b,vertexSortingMode:\"NONE\"},smoothInterpolation:0b,startDelay:0,time:20,uvAnimation:{_enable:0b},uvMode:\"Stretch\",widthOverTrail:{data:{number:0.5f},type:\"constant\"}}},uvAnimation:{_enable:0b},velocityOverLifetime:{_enable:0b}},name:\"collision_emitter\",transform:{_childrenId:[],_parentId:\"_NULL_\",id:\"7bd39a0c-8ef3-4302-86e5-fa98ed8b5ece\",localPosition:[0.0f,0.0f,0.0f],localRotation:[0.0f,0.0f,0.0f,1.0f],localScale:[1.0f,1.0f,1.0f]},version:1},type:\"collision_emitter\"}",
+  "id": "7bd39a0c-8ef3-4302-86e5-fa98ed8b5ece",
+  "name": "collision_emitter",
+  "type": "collision_emitter",
+  "dataSchema": {
+    "nbtType": "TAG_Compound",
+    "fields": {
+      "collision": {
+        "nbtType": "TAG_Compound",
+        "fields": {
+          "entityFilter": {
+            "nbtType": "TAG_String",
+            "value": "LIVING"
+          },
+          "deduplicationGroup": {
+            "nbtType": "TAG_String",
+            "value": ""
+          },
+          "maxHitsPerStep": {
+            "nbtType": "TAG_Int",
+            "value": 32
+          },
+          "fluidEffect": {
+            "nbtType": "TAG_String",
+            "value": ""
+          },
+          "entityEffect": {
+            "nbtType": "TAG_String",
+            "value": ""
+          },
+          "maxBounces": {
+            "nbtType": "TAG_Int",
+            "value": 4
+          },
+          "excludedBlockTypes": {
+            "nbtType": "TAG_String",
+            "value": ""
+          },
+          "ignoreOwner": {
+            "nbtType": "TAG_Byte",
+            "value": 1
+          },
+          "sweepEntityMotion": {
+            "nbtType": "TAG_Byte",
+            "value": 0
+          },
+          "contactCooldownTicks": {
+            "nbtType": "TAG_Int",
+            "value": 0
+          },
+          "ownerEntityId": {
+            "nbtType": "TAG_Int",
+            "value": -1
+          },
+          "fluids": {
+            "nbtType": "TAG_Byte",
+            "value": 0
+          },
+          "includedBlockTypes": {
+            "nbtType": "TAG_String",
+            "value": ""
+          },
+          "cachedTileLimit": {
+            "nbtType": "TAG_Int",
+            "value": 16384
+          },
+          "blocks": {
+            "nbtType": "TAG_Byte",
+            "value": 1
+          },
+          "excludedEntityTypes": {
+            "nbtType": "TAG_String",
+            "value": ""
+          },
+          "deduplicateEmitterHits": {
+            "nbtType": "TAG_Byte",
+            "value": 0
+          },
+          "deduplicateParticleHits": {
+            "nbtType": "TAG_Byte",
+            "value": 1
+          },
+          "alignEffectsToNormal": {
+            "nbtType": "TAG_Byte",
+            "value": 0
+          },
+          "blockEffect": {
+            "nbtType": "TAG_String",
+            "value": ""
+          },
+          "restitution": {
+            "nbtType": "TAG_Double",
+            "value": 0.32
+          },
+          "entities": {
+            "nbtType": "TAG_Byte",
+            "value": 1
+          },
+          "response": {
+            "nbtType": "TAG_String",
+            "value": "INHERIT"
+          },
+          "includedEntityTypes": {
+            "nbtType": "TAG_String",
+            "value": ""
+          },
+          "ignoreSpectators": {
+            "nbtType": "TAG_Byte",
+            "value": 1
+          },
+          "pickableOnly": {
+            "nbtType": "TAG_Byte",
+            "value": 0
+          },
+          "detectStationaryOverlaps": {
+            "nbtType": "TAG_Byte",
+            "value": 0
+          },
+          "rayProbe": {
+            "nbtType": "TAG_Byte",
+            "value": 0
+          }
+        }
+      },
+      "transform": {
+        "nbtType": "TAG_Compound",
+        "fields": {
+          "_childrenId": {
+            "nbtType": "TAG_List",
+            "length": 0
+          },
+          "_parentId": {
+            "nbtType": "TAG_String",
+            "value": "_NULL_"
+          },
+          "localPosition": {
+            "nbtType": "TAG_List",
+            "length": 3,
+            "element": {
+              "nbtType": "TAG_Float",
+              "value": 0
+            }
+          },
+          "id": {
+            "nbtType": "TAG_String",
+            "value": "7bd39a0c-8ef3-4302-86e5-fa98ed8b5ece"
+          },
+          "localScale": {
+            "nbtType": "TAG_List",
+            "length": 3,
+            "element": {
+              "nbtType": "TAG_Float",
+              "value": 1
+            }
+          },
+          "localRotation": {
+            "nbtType": "TAG_List",
+            "length": 4,
+            "element": {
+              "nbtType": "TAG_Float",
+              "value": 0
+            }
+          }
+        }
+      },
+      "name": {
+        "nbtType": "TAG_String",
+        "value": "collision_emitter"
+      },
+      "config": {
+        "nbtType": "TAG_Compound",
+        "fields": {
+          "simulationSpace": {
+            "nbtType": "TAG_String",
+            "value": "Local"
+          },
+          "renderer": {
+            "nbtType": "TAG_Compound",
+            "fields": {
+              "useGPUInstance": {
+                "nbtType": "TAG_Byte",
+                "value": 0
+              },
+              "velocityScale": {
+                "nbtType": "TAG_Float",
+                "value": 0
+              },
+              "lengthScale": {
+                "nbtType": "TAG_Float",
+                "value": 2
+              },
+              "facingMode": {
+                "nbtType": "TAG_String",
+                "value": "DEFAULT"
+              },
+              "facingDirection": {
+                "nbtType": "TAG_Compound",
+                "fields": {
+                  "mode": {
+                    "nbtType": "TAG_String",
+                    "value": "DERIVE_FROM_VELOCITY"
+                  },
+                  "minSpeedThreshold": {
+                    "nbtType": "TAG_Float",
+                    "value": 0.01
+                  },
+                  "customDirection": {
+                    "nbtType": "TAG_List",
+                    "length": 3,
+                    "element": {
+                      "nbtType": "TAG_Float",
+                      "value": 0
+                    }
+                  }
+                }
+              },
+              "customMask": {
+                "nbtType": "TAG_Compound",
+                "fields": {
+                  "_enable": {
+                    "nbtType": "TAG_Byte",
+                    "value": 0
+                  }
+                }
+              },
+              "shade": {
+                "nbtType": "TAG_Byte",
+                "value": 1
+              },
+              "layer": {
+                "nbtType": "TAG_String",
+                "value": "Translucent"
+              },
+              "renderMode": {
+                "nbtType": "TAG_String",
+                "value": "Billboard"
+              },
+              "compositeMode": {
+                "nbtType": "TAG_String",
+                "value": "INHERIT"
+              },
+              "useBlockUV": {
+                "nbtType": "TAG_Byte",
+                "value": 1
+              },
+              "tangent": {
+                "nbtType": "TAG_Byte",
+                "value": 0
+              },
+              "orderInLayer": {
+                "nbtType": "TAG_Int",
+                "value": 0
+              },
+              "vertexSortingMode": {
+                "nbtType": "TAG_String",
+                "value": "NONE"
+              },
+              "materials": {
+                "nbtType": "TAG_Compound",
+                "fields": {
+                  "uid": {
+                    "nbtType": "TAG_Int",
+                    "value": 1
+                  },
+                  "payload": {
+                    "nbtType": "TAG_List",
+                    "length": 1,
+                    "element": {
+                      "nbtType": "TAG_Compound",
+                      "fields": {
+                        "renderStateSource": {
+                          "nbtType": "TAG_String",
+                          "value": "MATERIAL"
+                        },
+                        "depthMask": {
+                          "nbtType": "TAG_Byte",
+                          "value": 0
+                        },
+                        "material": {
+                          "nbtType": "TAG_Compound",
+                          "fields": {
+                            "data": {
+                              "nbtType": "TAG_Compound",
+                              "fields": {
+                                "pixelArt": {
+                                  "nbtType": "TAG_Compound",
+                                  "fields": {
+                                    "_enable": {
+                                      "nbtType": "TAG_Byte",
+                                      "value": 0
+                                    }
+                                  }
+                                },
+                                "texture": {
+                                  "nbtType": "TAG_String",
+                                  "value": "photon:textures/particle/circle.png"
+                                },
+                                "hdr": {
+                                  "nbtType": "TAG_Compound",
+                                  "fields": {
+                                    "color": {
+                                      "nbtType": "TAG_List",
+                                      "length": 4,
+                                      "element": {
+                                        "nbtType": "TAG_Float",
+                                        "value": 0
+                                      }
+                                    }
+                                  }
+                                },
+                                "discardThreshold": {
+                                  "nbtType": "TAG_Float",
+                                  "value": 0.1
+                                },
+                                "hdrMode": {
+                                  "nbtType": "TAG_String",
+                                  "value": "ADDITIVE"
+                                },
+                                "softParticles": {
+                                  "nbtType": "TAG_Compound",
+                                  "fields": {
+                                    "_enable": {
+                                      "nbtType": "TAG_Byte",
+                                      "value": 0
+                                    }
+                                  }
+                                },
+                                "litParticles": {
+                                  "nbtType": "TAG_Compound",
+                                  "fields": {
+                                    "_enable": {
+                                      "nbtType": "TAG_Byte",
+                                      "value": 0
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "type": {
+                              "nbtType": "TAG_String",
+                              "value": "texture"
+                            }
+                          }
+                        },
+                        "blendMode": {
+                          "nbtType": "TAG_Compound",
+                          "fields": {
+                            "dstAlphaFactor": {
+                              "nbtType": "TAG_String",
+                              "value": "ZERO"
+                            },
+                            "srcAlphaFactor": {
+                              "nbtType": "TAG_String",
+                              "value": "ONE"
+                            },
+                            "enableBlend": {
+                              "nbtType": "TAG_Byte",
+                              "value": 1
+                            },
+                            "blendFunc": {
+                              "nbtType": "TAG_String",
+                              "value": "ADD"
+                            },
+                            "dstColorFactor": {
+                              "nbtType": "TAG_String",
+                              "value": "ONE_MINUS_SRC_ALPHA"
+                            },
+                            "srcColorFactor": {
+                              "nbtType": "TAG_String",
+                              "value": "SRC_ALPHA"
+                            }
+                          }
+                        },
+                        "depthTest": {
+                          "nbtType": "TAG_Byte",
+                          "value": 1
+                        },
+                        "cull": {
+                          "nbtType": "TAG_Byte",
+                          "value": 1
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "modelPivot": {
+                "nbtType": "TAG_List",
+                "length": 3,
+                "element": {
+                  "nbtType": "TAG_Float",
+                  "value": 0
+                }
+              },
+              "cull": {
+                "nbtType": "TAG_Compound",
+                "fields": {
+                  "_enable": {
+                    "nbtType": "TAG_Byte",
+                    "value": 0
+                  }
+                }
+              }
+            }
+          },
+          "sizeBySpeed": {
+            "nbtType": "TAG_Compound",
+            "fields": {
+              "_enable": {
+                "nbtType": "TAG_Byte",
+                "value": 0
+              }
+            }
+          },
+          "rotationBySpeed": {
+            "nbtType": "TAG_Compound",
+            "fields": {
+              "_enable": {
+                "nbtType": "TAG_Byte",
+                "value": 0
+              }
+            }
+          },
+          "trails": {
+            "nbtType": "TAG_Compound",
+            "fields": {
+              "araConfig": {
+                "nbtType": "TAG_Compound",
+                "fields": {
+                  "cornerRoundness": {
+                    "nbtType": "TAG_Int",
+                    "value": 5
+                  },
+                  "physicsSetting": {
+                    "nbtType": "TAG_Compound",
+                    "fields": {
+                      "_enable": {
+                        "nbtType": "TAG_Byte",
+                        "value": 0
+                      }
+                    }
+                  },
+                  "renderer": {
+                    "nbtType": "TAG_Compound",
+                    "fields": {
+                      "useGPUInstance": {
+                        "nbtType": "TAG_Byte",
+                        "value": 0
+                      },
+                      "compositeMode": {
+                        "nbtType": "TAG_String",
+                        "value": "INHERIT"
+                      },
+                      "orderInLayer": {
+                        "nbtType": "TAG_Int",
+                        "value": 0
+                      },
+                      "vertexSortingMode": {
+                        "nbtType": "TAG_String",
+                        "value": "NONE"
+                      },
+                      "materials": {
+                        "nbtType": "TAG_Compound",
+                        "fields": {
+                          "uid": {
+                            "nbtType": "TAG_Int",
+                            "value": 1
+                          },
+                          "payload": {
+                            "nbtType": "TAG_List",
+                            "length": 1,
+                            "element": {
+                              "nbtType": "TAG_Compound",
+                              "fields": {
+                                "renderStateSource": {
+                                  "nbtType": "TAG_String",
+                                  "value": "MATERIAL"
+                                },
+                                "depthMask": {
+                                  "nbtType": "TAG_Byte",
+                                  "value": 0
+                                },
+                                "material": {
+                                  "nbtType": "TAG_Compound",
+                                  "fields": {
+                                    "data": {
+                                      "nbtType": "TAG_Compound",
+                                      "fields": {
+                                        "pixelArt": {
+                                          "nbtType": "TAG_Compound",
+                                          "fields": {
+                                            "_enable": {
+                                              "nbtType": "TAG_Byte",
+                                              "value": 0
+                                            }
+                                          }
+                                        },
+                                        "texture": {
+                                          "nbtType": "TAG_String",
+                                          "value": "photon:textures/particle/circle.png"
+                                        },
+                                        "hdr": {
+                                          "nbtType": "TAG_Compound",
+                                          "fields": {
+                                            "color": {
+                                              "nbtType": "TAG_List",
+                                              "length": 4,
+                                              "element": {
+                                                "nbtType": "TAG_Float",
+                                                "value": 0
+                                              }
+                                            }
+                                          }
+                                        },
+                                        "discardThreshold": {
+                                          "nbtType": "TAG_Float",
+                                          "value": 0.1
+                                        },
+                                        "hdrMode": {
+                                          "nbtType": "TAG_String",
+                                          "value": "ADDITIVE"
+                                        },
+                                        "softParticles": {
+                                          "nbtType": "TAG_Compound",
+                                          "fields": {
+                                            "_enable": {
+                                              "nbtType": "TAG_Byte",
+                                              "value": 0
+                                            }
+                                          }
+                                        },
+                                        "litParticles": {
+                                          "nbtType": "TAG_Compound",
+                                          "fields": {
+                                            "_enable": {
+                                              "nbtType": "TAG_Byte",
+                                              "value": 0
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "type": {
+                                      "nbtType": "TAG_String",
+                                      "value": "texture"
+                                    }
+                                  }
+                                },
+                                "blendMode": {
+                                  "nbtType": "TAG_Compound",
+                                  "fields": {
+                                    "dstAlphaFactor": {
+                                      "nbtType": "TAG_String",
+                                      "value": "ZERO"
+                                    },
+                                    "srcAlphaFactor": {
+                                      "nbtType": "TAG_String",
+                                      "value": "ONE"
+                                    },
+                                    "enableBlend": {
+                                      "nbtType": "TAG_Byte",
+                                      "value": 1
+                                    },
+                                    "blendFunc": {
+                                      "nbtType": "TAG_String",
+                                      "value": "ADD"
+                                    },
+                                    "dstColorFactor": {
+                                      "nbtType": "TAG_String",
+                                      "value": "ONE_MINUS_SRC_ALPHA"
+                                    },
+                                    "srcColorFactor": {
+                                      "nbtType": "TAG_String",
+                                      "value": "SRC_ALPHA"
+                                    }
+                                  }
+                                },
+                                "depthTest": {
+                                  "nbtType": "TAG_Byte",
+                                  "value": 1
+                                },
+                                "cull": {
+                                  "nbtType": "TAG_Byte",
+                                  "value": 1
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "customMask": {
+                        "nbtType": "TAG_Compound",
+                        "fields": {
+                          "_enable": {
+                            "nbtType": "TAG_Byte",
+                            "value": 0
+                          }
+                        }
+                      },
+                      "cull": {
+                        "nbtType": "TAG_Compound",
+                        "fields": {
+                          "_enable": {
+                            "nbtType": "TAG_Byte",
+                            "value": 0
+                          }
+                        }
+                      },
+                      "layer": {
+                        "nbtType": "TAG_String",
+                        "value": "Translucent"
+                      }
+                    }
+                  },
+                  "thickness": {
+                    "nbtType": "TAG_Float",
+                    "value": 0.5
+                  },
+                  "initialThickness": {
+                    "nbtType": "TAG_Float",
+                    "value": 1
+                  },
+                  "section": {
+                    "nbtType": "TAG_Compound",
+                    "fields": {
+                      "_enable": {
+                        "nbtType": "TAG_Byte",
+                        "value": 0
+                      }
+                    }
+                  },
+                  "space": {
+                    "nbtType": "TAG_String",
+                    "value": "World"
+                  },
+                  "duration": {
+                    "nbtType": "TAG_Int",
+                    "value": 100
+                  },
+                  "uvFactor": {
+                    "nbtType": "TAG_Float",
+                    "value": 1
+                  },
+                  "highQualityCorners": {
+                    "nbtType": "TAG_Byte",
+                    "value": 0
+                  },
+                  "minDistance": {
+                    "nbtType": "TAG_Float",
+                    "value": 0.05
+                  },
+                  "sorting": {
+                    "nbtType": "TAG_String",
+                    "value": "OlderOnTop"
+                  },
+                  "tileAnchor": {
+                    "nbtType": "TAG_Float",
+                    "value": 1
+                  },
+                  "initialVelocity": {
+                    "nbtType": "TAG_List",
+                    "length": 3,
+                    "element": {
+                      "nbtType": "TAG_Float",
+                      "value": 0
+                    }
+                  },
+                  "timeInterval": {
+                    "nbtType": "TAG_Float",
+                    "value": 0.05
+                  },
+                  "thicknessOverLength": {
+                    "nbtType": "TAG_Compound",
+                    "fields": {
+                      "data": {
+                        "nbtType": "TAG_Compound",
+                        "fields": {
+                          "number": {
+                            "nbtType": "TAG_Float",
+                            "value": 1
+                          }
+                        }
+                      },
+                      "type": {
+                        "nbtType": "TAG_String",
+                        "value": "constant"
+                      }
+                    }
+                  },
+                  "thicknessOverTime": {
+                    "nbtType": "TAG_Compound",
+                    "fields": {
+                      "data": {
+                        "nbtType": "TAG_Compound",
+                        "fields": {
+                          "number": {
+                            "nbtType": "TAG_Float",
+                            "value": 1
+                          }
+                        }
+                      },
+                      "type": {
+                        "nbtType": "TAG_String",
+                        "value": "constant"
+                      }
+                    }
+                  },
+                  "looping": {
+                    "nbtType": "TAG_Byte",
+                    "value": 1
+                  },
+                  "colorOverTime": {
+                    "nbtType": "TAG_Compound",
+                    "fields": {
+                      "data": {
+                        "nbtType": "TAG_Compound",
+                        "fields": {
+                          "number": {
+                            "nbtType": "TAG_Int",
+                            "value": -1
+                          }
+                        }
+                      },
+                      "type": {
+                        "nbtType": "TAG_String",
+                        "value": "color"
+                      }
+                    }
+                  },
+                  "thicknessOverSegmentTime": {
+                    "nbtType": "TAG_Compound",
+                    "fields": {
+                      "data": {
+                        "nbtType": "TAG_Compound",
+                        "fields": {
+                          "number": {
+                            "nbtType": "TAG_Float",
+                            "value": 1
+                          }
+                        }
+                      },
+                      "type": {
+                        "nbtType": "TAG_String",
+                        "value": "constant"
+                      }
+                    }
+                  },
+                  "additionalGPUDataSetting": {
+                    "nbtType": "TAG_Compound",
+                    "fields": {
+                      "_enable": {
+                        "nbtType": "TAG_Byte",
+                        "value": 0
+                      }
+                    }
+                  },
+                  "colorOverSegmentTime": {
+                    "nbtType": "TAG_Compound",
+                    "fields": {
+                      "data": {
+                        "nbtType": "TAG_Compound",
+                        "fields": {
+                          "number": {
+                            "nbtType": "TAG_Int",
+                            "value": -1
+                          }
+                        }
+                      },
+                      "type": {
+                        "nbtType": "TAG_String",
+                        "value": "color"
+                      }
+                    }
+                  },
+                  "textureMode": {
+                    "nbtType": "TAG_String",
+                    "value": "Stretch"
+                  },
+                  "smoothness": {
+                    "nbtType": "TAG_Int",
+                    "value": 1
+                  },
+                  "colorOverLength": {
+                    "nbtType": "TAG_Compound",
+                    "fields": {
+                      "data": {
+                        "nbtType": "TAG_Compound",
+                        "fields": {
+                          "number": {
+                            "nbtType": "TAG_Int",
+                            "value": -1
+                          }
+                        }
+                      },
+                      "type": {
+                        "nbtType": "TAG_String",
+                        "value": "color"
+                      }
+                    }
+                  },
+                  "customSpace": {
+                    "nbtType": "TAG_String",
+                    "value": ""
+                  },
+                  "initialColor": {
+                    "nbtType": "TAG_Int",
+                    "value": -1
+                  },
+                  "uvWidthFactor": {
+                    "nbtType": "TAG_Float",
+                    "value": 1
+                  },
+                  "smoothingDistance": {
+                    "nbtType": "TAG_Float",
+                    "value": 0.05
+                  },
+                  "time": {
+                    "nbtType": "TAG_Float",
+                    "value": 1
+                  },
+                  "alignment": {
+                    "nbtType": "TAG_String",
+                    "value": "View"
+                  },
+                  "emit": {
+                    "nbtType": "TAG_Byte",
+                    "value": 1
+                  }
+                }
+              },
+              "_enable": {
+                "nbtType": "TAG_Byte",
+                "value": 0
+              },
+              "config": {
+                "nbtType": "TAG_Compound",
+                "fields": {
+                  "widthOverTrail": {
+                    "nbtType": "TAG_Compound",
+                    "fields": {
+                      "data": {
+                        "nbtType": "TAG_Compound",
+                        "fields": {
+                          "number": {
+                            "nbtType": "TAG_Float",
+                            "value": 0.5
+                          }
+                        }
+                      },
+                      "type": {
+                        "nbtType": "TAG_String",
+                        "value": "constant"
+                      }
+                    }
+                  },
+                  "renderer": {
+                    "nbtType": "TAG_Compound",
+                    "fields": {
+                      "useGPUInstance": {
+                        "nbtType": "TAG_Byte",
+                        "value": 0
+                      },
+                      "compositeMode": {
+                        "nbtType": "TAG_String",
+                        "value": "INHERIT"
+                      },
+                      "orderInLayer": {
+                        "nbtType": "TAG_Int",
+                        "value": 0
+                      },
+                      "vertexSortingMode": {
+                        "nbtType": "TAG_String",
+                        "value": "NONE"
+                      },
+                      "materials": {
+                        "nbtType": "TAG_Compound",
+                        "fields": {
+                          "uid": {
+                            "nbtType": "TAG_Int",
+                            "value": 1
+                          },
+                          "payload": {
+                            "nbtType": "TAG_List",
+                            "length": 1,
+                            "element": {
+                              "nbtType": "TAG_Compound",
+                              "fields": {
+                                "renderStateSource": {
+                                  "nbtType": "TAG_String",
+                                  "value": "MATERIAL"
+                                },
+                                "depthMask": {
+                                  "nbtType": "TAG_Byte",
+                                  "value": 0
+                                },
+                                "material": {
+                                  "nbtType": "TAG_Compound",
+                                  "fields": {
+                                    "data": {
+                                      "nbtType": "TAG_Compound",
+                                      "fields": {
+                                        "pixelArt": {
+                                          "nbtType": "TAG_Compound",
+                                          "fields": {
+                                            "_enable": {
+                                              "nbtType": "TAG_Byte",
+                                              "value": 0
+                                            }
+                                          }
+                                        },
+                                        "texture": {
+                                          "nbtType": "TAG_String",
+                                          "value": "photon:textures/particle/circle.png"
+                                        },
+                                        "hdr": {
+                                          "nbtType": "TAG_Compound",
+                                          "fields": {
+                                            "color": {
+                                              "nbtType": "TAG_List",
+                                              "length": 4,
+                                              "element": {
+                                                "nbtType": "TAG_Float",
+                                                "value": 0
+                                              }
+                                            }
+                                          }
+                                        },
+                                        "discardThreshold": {
+                                          "nbtType": "TAG_Float",
+                                          "value": 0.1
+                                        },
+                                        "hdrMode": {
+                                          "nbtType": "TAG_String",
+                                          "value": "ADDITIVE"
+                                        },
+                                        "softParticles": {
+                                          "nbtType": "TAG_Compound",
+                                          "fields": {
+                                            "_enable": {
+                                              "nbtType": "TAG_Byte",
+                                              "value": 0
+                                            }
+                                          }
+                                        },
+                                        "litParticles": {
+                                          "nbtType": "TAG_Compound",
+                                          "fields": {
+                                            "_enable": {
+                                              "nbtType": "TAG_Byte",
+                                              "value": 0
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "type": {
+                                      "nbtType": "TAG_String",
+                                      "value": "texture"
+                                    }
+                                  }
+                                },
+                                "blendMode": {
+                                  "nbtType": "TAG_Compound",
+                                  "fields": {
+                                    "dstAlphaFactor": {
+                                      "nbtType": "TAG_String",
+                                      "value": "ZERO"
+                                    },
+                                    "srcAlphaFactor": {
+                                      "nbtType": "TAG_String",
+                                      "value": "ONE"
+                                    },
+                                    "enableBlend": {
+                                      "nbtType": "TAG_Byte",
+                                      "value": 1
+                                    },
+                                    "blendFunc": {
+                                      "nbtType": "TAG_String",
+                                      "value": "ADD"
+                                    },
+                                    "dstColorFactor": {
+                                      "nbtType": "TAG_String",
+                                      "value": "ONE_MINUS_SRC_ALPHA"
+                                    },
+                                    "srcColorFactor": {
+                                      "nbtType": "TAG_String",
+                                      "value": "SRC_ALPHA"
+                                    }
+                                  }
+                                },
+                                "depthTest": {
+                                  "nbtType": "TAG_Byte",
+                                  "value": 1
+                                },
+                                "cull": {
+                                  "nbtType": "TAG_Byte",
+                                  "value": 1
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "customMask": {
+                        "nbtType": "TAG_Compound",
+                        "fields": {
+                          "_enable": {
+                            "nbtType": "TAG_Byte",
+                            "value": 0
+                          }
+                        }
+                      },
+                      "cull": {
+                        "nbtType": "TAG_Compound",
+                        "fields": {
+                          "_enable": {
+                            "nbtType": "TAG_Byte",
+                            "value": 0
+                          }
+                        }
+                      },
+                      "layer": {
+                        "nbtType": "TAG_String",
+                        "value": "Translucent"
+                      }
+                    }
+                  },
+                  "looping": {
+                    "nbtType": "TAG_Byte",
+                    "value": 1
+                  },
+                  "additionalGPUDataSetting": {
+                    "nbtType": "TAG_Compound",
+                    "fields": {
+                      "_enable": {
+                        "nbtType": "TAG_Byte",
+                        "value": 0
+                      }
+                    }
+                  },
+                  "uvMode": {
+                    "nbtType": "TAG_String",
+                    "value": "Stretch"
+                  },
+                  "colorOverTrail": {
+                    "nbtType": "TAG_Compound",
+                    "fields": {
+                      "data": {
+                        "nbtType": "TAG_Compound",
+                        "fields": {
+                          "gradientColor": {
+                            "nbtType": "TAG_Compound",
+                            "fields": {
+                              "a": {
+                                "nbtType": "TAG_List",
+                                "length": 4,
+                                "element": {
+                                  "nbtType": "TAG_Float",
+                                  "value": 0
+                                }
+                              },
+                              "rgb": {
+                                "nbtType": "TAG_List",
+                                "length": 8,
+                                "element": {
+                                  "nbtType": "TAG_Float",
+                                  "value": 0
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "type": {
+                        "nbtType": "TAG_String",
+                        "value": "gradient"
+                      }
+                    }
+                  },
+                  "duration": {
+                    "nbtType": "TAG_Int",
+                    "value": 100
+                  },
+                  "minVertexDistance": {
+                    "nbtType": "TAG_Float",
+                    "value": 0.05
+                  },
+                  "startDelay": {
+                    "nbtType": "TAG_Int",
+                    "value": 0
+                  },
+                  "time": {
+                    "nbtType": "TAG_Int",
+                    "value": 20
+                  },
+                  "lights": {
+                    "nbtType": "TAG_Compound",
+                    "fields": {
+                      "blockLight": {
+                        "nbtType": "TAG_Compound",
+                        "fields": {
+                          "data": {
+                            "nbtType": "TAG_Compound",
+                            "fields": {
+                              "number": {
+                                "nbtType": "TAG_Int",
+                                "value": 15
+                              }
+                            }
+                          },
+                          "type": {
+                            "nbtType": "TAG_String",
+                            "value": "constant"
+                          }
+                        }
+                      },
+                      "_enable": {
+                        "nbtType": "TAG_Byte",
+                        "value": 1
+                      },
+                      "skyLight": {
+                        "nbtType": "TAG_Compound",
+                        "fields": {
+                          "data": {
+                            "nbtType": "TAG_Compound",
+                            "fields": {
+                              "number": {
+                                "nbtType": "TAG_Int",
+                                "value": 15
+                              }
+                            }
+                          },
+                          "type": {
+                            "nbtType": "TAG_String",
+                            "value": "constant"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "uvAnimation": {
+                    "nbtType": "TAG_Compound",
+                    "fields": {
+                      "_enable": {
+                        "nbtType": "TAG_Byte",
+                        "value": 0
+                      }
+                    }
+                  },
+                  "smoothInterpolation": {
+                    "nbtType": "TAG_Byte",
+                    "value": 0
+                  }
+                }
+              }
+            }
+          },
+          "startColor": {
+            "nbtType": "TAG_Compound",
+            "fields": {
+              "data": {
+                "nbtType": "TAG_Compound",
+                "fields": {
+                  "number": {
+                    "nbtType": "TAG_Int",
+                    "value": -1
+                  }
+                }
+              },
+              "type": {
+                "nbtType": "TAG_String",
+                "value": "color"
+              }
+            }
+          },
+          "colorOverLifetime": {
+            "nbtType": "TAG_Compound",
+            "fields": {
+              "_enable": {
+                "nbtType": "TAG_Byte",
+                "value": 0
+              }
+            }
+          },
+          "duration": {
+            "nbtType": "TAG_Int",
+            "value": 100
+          },
+          "emission": {
+            "nbtType": "TAG_Compound",
+            "fields": {
+              "emissionRate": {
+                "nbtType": "TAG_Compound",
+                "fields": {
+                  "data": {
+                    "nbtType": "TAG_Compound",
+                    "fields": {
+                      "number": {
+                        "nbtType": "TAG_Float",
+                        "value": 0.5
+                      }
+                    }
+                  },
+                  "type": {
+                    "nbtType": "TAG_String",
+                    "value": "constant"
+                  }
+                }
+              },
+              "distanceRate": {
+                "nbtType": "TAG_Compound",
+                "fields": {
+                  "data": {
+                    "nbtType": "TAG_Compound",
+                    "fields": {
+                      "number": {
+                        "nbtType": "TAG_Int",
+                        "value": 0
+                      }
+                    }
+                  },
+                  "type": {
+                    "nbtType": "TAG_String",
+                    "value": "constant"
+                  }
+                }
+              },
+              "bursts": {
+                "nbtType": "TAG_Compound",
+                "fields": {
+                  "uid": {
+                    "nbtType": "TAG_Int",
+                    "value": 0
+                  },
+                  "payload": {
+                    "nbtType": "TAG_List",
+                    "length": 0
+                  }
+                }
+              },
+              "emissionMode": {
+                "nbtType": "TAG_String",
+                "value": "Exacting"
+              }
+            }
+          },
+          "lightEmission": {
+            "nbtType": "TAG_Compound",
+            "fields": {
+              "_enable": {
+                "nbtType": "TAG_Byte",
+                "value": 0
+              }
+            }
+          },
+          "startSpeed": {
+            "nbtType": "TAG_Compound",
+            "fields": {
+              "data": {
+                "nbtType": "TAG_Compound",
+                "fields": {
+                  "number": {
+                    "nbtType": "TAG_Int",
+                    "value": 1
+                  }
+                }
+              },
+              "type": {
+                "nbtType": "TAG_String",
+                "value": "constant"
+              }
+            }
+          },
+          "startSize": {
+            "nbtType": "TAG_List",
+            "length": 3,
+            "element": {
+              "nbtType": "TAG_Compound",
+              "fields": {
+                "data": {
+                  "nbtType": "TAG_Compound",
+                  "fields": {
+                    "number": {
+                      "nbtType": "TAG_Double",
+                      "value": 0.1
+                    }
+                  }
+                },
+                "type": {
+                  "nbtType": "TAG_String",
+                  "value": "constant"
+                }
+              }
+            }
+          },
+          "physics": {
+            "nbtType": "TAG_Compound",
+            "fields": {
+              "bounceSpreadRate": {
+                "nbtType": "TAG_Compound",
+                "fields": {
+                  "data": {
+                    "nbtType": "TAG_Compound",
+                    "fields": {
+                      "number": {
+                        "nbtType": "TAG_Int",
+                        "value": 0
+                      }
+                    }
+                  },
+                  "type": {
+                    "nbtType": "TAG_String",
+                    "value": "constant"
+                  }
+                }
+              },
+              "bounceChance": {
+                "nbtType": "TAG_Compound",
+                "fields": {
+                  "data": {
+                    "nbtType": "TAG_Compound",
+                    "fields": {
+                      "number": {
+                        "nbtType": "TAG_Int",
+                        "value": 1
+                      }
+                    }
+                  },
+                  "type": {
+                    "nbtType": "TAG_String",
+                    "value": "constant"
+                  }
+                }
+              },
+              "gravity": {
+                "nbtType": "TAG_Compound",
+                "fields": {
+                  "data": {
+                    "nbtType": "TAG_Compound",
+                    "fields": {
+                      "number": {
+                        "nbtType": "TAG_Int",
+                        "value": 0
+                      }
+                    }
+                  },
+                  "type": {
+                    "nbtType": "TAG_String",
+                    "value": "constant"
+                  }
+                }
+              },
+              "_enable": {
+                "nbtType": "TAG_Byte",
+                "value": 1
+              },
+              "collidedFriction": {
+                "nbtType": "TAG_Compound",
+                "fields": {
+                  "data": {
+                    "nbtType": "TAG_Compound",
+                    "fields": {
+                      "number": {
+                        "nbtType": "TAG_Float",
+                        "value": 0.7
+                      }
+                    }
+                  },
+                  "type": {
+                    "nbtType": "TAG_String",
+                    "value": "constant"
+                  }
+                }
+              },
+              "removedWhenCollided": {
+                "nbtType": "TAG_Byte",
+                "value": 0
+              },
+              "hasCollision": {
+                "nbtType": "TAG_Byte",
+                "value": 1
+              },
+              "friction": {
+                "nbtType": "TAG_Compound",
+                "fields": {
+                  "data": {
+                    "nbtType": "TAG_Compound",
+                    "fields": {
+                      "number": {
+                        "nbtType": "TAG_Int",
+                        "value": 1
+                      }
+                    }
+                  },
+                  "type": {
+                    "nbtType": "TAG_String",
+                    "value": "constant"
+                  }
+                }
+              },
+              "bounceRate": {
+                "nbtType": "TAG_Compound",
+                "fields": {
+                  "data": {
+                    "nbtType": "TAG_Compound",
+                    "fields": {
+                      "number": {
+                        "nbtType": "TAG_Int",
+                        "value": 1
+                      }
+                    }
+                  },
+                  "type": {
+                    "nbtType": "TAG_String",
+                    "value": "constant"
+                  }
+                }
+              }
+            }
+          },
+          "parallelUpdate": {
+            "nbtType": "TAG_Byte",
+            "value": 0
+          },
+          "noise": {
+            "nbtType": "TAG_Compound",
+            "fields": {
+              "_enable": {
+                "nbtType": "TAG_Byte",
+                "value": 0
+              }
+            }
+          },
+          "subEmitters": {
+            "nbtType": "TAG_Compound",
+            "fields": {
+              "_enable": {
+                "nbtType": "TAG_Byte",
+                "value": 0
+              }
+            }
+          },
+          "velocityOverLifetime": {
+            "nbtType": "TAG_Compound",
+            "fields": {
+              "_enable": {
+                "nbtType": "TAG_Byte",
+                "value": 0
+              }
+            }
+          },
+          "rotationOverLifetime": {
+            "nbtType": "TAG_Compound",
+            "fields": {
+              "_enable": {
+                "nbtType": "TAG_Byte",
+                "value": 0
+              }
+            }
+          },
+          "lights": {
+            "nbtType": "TAG_Compound",
+            "fields": {
+              "blockLight": {
+                "nbtType": "TAG_Compound",
+                "fields": {
+                  "data": {
+                    "nbtType": "TAG_Compound",
+                    "fields": {
+                      "number": {
+                        "nbtType": "TAG_Int",
+                        "value": 15
+                      }
+                    }
+                  },
+                  "type": {
+                    "nbtType": "TAG_String",
+                    "value": "constant"
+                  }
+                }
+              },
+              "_enable": {
+                "nbtType": "TAG_Byte",
+                "value": 1
+              },
+              "skyLight": {
+                "nbtType": "TAG_Compound",
+                "fields": {
+                  "data": {
+                    "nbtType": "TAG_Compound",
+                    "fields": {
+                      "number": {
+                        "nbtType": "TAG_Int",
+                        "value": 15
+                      }
+                    }
+                  },
+                  "type": {
+                    "nbtType": "TAG_String",
+                    "value": "constant"
+                  }
+                }
+              }
+            }
+          },
+          "inheritVelocity": {
+            "nbtType": "TAG_Compound",
+            "fields": {
+              "_enable": {
+                "nbtType": "TAG_Byte",
+                "value": 0
+              }
+            }
+          },
+          "uvAnimation": {
+            "nbtType": "TAG_Compound",
+            "fields": {
+              "_enable": {
+                "nbtType": "TAG_Byte",
+                "value": 0
+              }
+            }
+          },
+          "startLifetime": {
+            "nbtType": "TAG_Compound",
+            "fields": {
+              "data": {
+                "nbtType": "TAG_Compound",
+                "fields": {
+                  "number": {
+                    "nbtType": "TAG_Int",
+                    "value": 100
+                  }
+                }
+              },
+              "type": {
+                "nbtType": "TAG_String",
+                "value": "constant"
+              }
+            }
+          },
+          "lifetimeByEmitterSpeed": {
+            "nbtType": "TAG_Compound",
+            "fields": {
+              "_enable": {
+                "nbtType": "TAG_Byte",
+                "value": 0
+              }
+            }
+          },
+          "prewarm": {
+            "nbtType": "TAG_Int",
+            "value": 0
+          },
+          "shape": {
+            "nbtType": "TAG_Compound",
+            "fields": {
+              "shape": {
+                "nbtType": "TAG_Compound",
+                "fields": {
+                  "data": {
+                    "nbtType": "TAG_Compound",
+                    "fields": {
+                      "radiusThickness": {
+                        "nbtType": "TAG_Float",
+                        "value": 1
+                      },
+                      "arc": {
+                        "nbtType": "TAG_Float",
+                        "value": 360
+                      },
+                      "angle": {
+                        "nbtType": "TAG_Float",
+                        "value": 25
+                      },
+                      "radius": {
+                        "nbtType": "TAG_Float",
+                        "value": 0.5
+                      },
+                      "shapeArc": {
+                        "nbtType": "TAG_Compound",
+                        "fields": {
+                          "arcMode": {
+                            "nbtType": "TAG_String",
+                            "value": "Random"
+                          },
+                          "arcSpread": {
+                            "nbtType": "TAG_Float",
+                            "value": 0
+                          },
+                          "arcSpeed": {
+                            "nbtType": "TAG_Compound",
+                            "fields": {
+                              "data": {
+                                "nbtType": "TAG_Compound",
+                                "fields": {
+                                  "number": {
+                                    "nbtType": "TAG_Float",
+                                    "value": 1
+                                  }
+                                }
+                              },
+                              "type": {
+                                "nbtType": "TAG_String",
+                                "value": "constant"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "type": {
+                    "nbtType": "TAG_String",
+                    "value": "cone"
+                  }
+                }
+              },
+              "rotation": {
+                "nbtType": "TAG_List",
+                "length": 3,
+                "element": {
+                  "nbtType": "TAG_Compound",
+                  "fields": {
+                    "data": {
+                      "nbtType": "TAG_Compound",
+                      "fields": {
+                        "number": {
+                          "nbtType": "TAG_Int",
+                          "value": 0
+                        }
+                      }
+                    },
+                    "type": {
+                      "nbtType": "TAG_String",
+                      "value": "constant"
+                    }
+                  }
+                }
+              },
+              "scale": {
+                "nbtType": "TAG_List",
+                "length": 3,
+                "element": {
+                  "nbtType": "TAG_Compound",
+                  "fields": {
+                    "data": {
+                      "nbtType": "TAG_Compound",
+                      "fields": {
+                        "number": {
+                          "nbtType": "TAG_Int",
+                          "value": 1
+                        }
+                      }
+                    },
+                    "type": {
+                      "nbtType": "TAG_String",
+                      "value": "constant"
+                    }
+                  }
+                }
+              },
+              "position": {
+                "nbtType": "TAG_List",
+                "length": 3,
+                "element": {
+                  "nbtType": "TAG_Compound",
+                  "fields": {
+                    "data": {
+                      "nbtType": "TAG_Compound",
+                      "fields": {
+                        "number": {
+                          "nbtType": "TAG_Int",
+                          "value": 0
+                        }
+                      }
+                    },
+                    "type": {
+                      "nbtType": "TAG_String",
+                      "value": "constant"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "looping": {
+            "nbtType": "TAG_Byte",
+            "value": 1
+          },
+          "externalForces": {
+            "nbtType": "TAG_Compound",
+            "fields": {
+              "_enable": {
+                "nbtType": "TAG_Byte",
+                "value": 0
+              }
+            }
+          },
+          "colorBySpeed": {
+            "nbtType": "TAG_Compound",
+            "fields": {
+              "_enable": {
+                "nbtType": "TAG_Byte",
+                "value": 0
+              }
+            }
+          },
+          "startRotation": {
+            "nbtType": "TAG_List",
+            "length": 3,
+            "element": {
+              "nbtType": "TAG_Compound",
+              "fields": {
+                "data": {
+                  "nbtType": "TAG_Compound",
+                  "fields": {
+                    "number": {
+                      "nbtType": "TAG_Int",
+                      "value": 0
+                    }
+                  }
+                },
+                "type": {
+                  "nbtType": "TAG_String",
+                  "value": "constant"
+                }
+              }
+            }
+          },
+          "forceOverLifetime": {
+            "nbtType": "TAG_Compound",
+            "fields": {
+              "_enable": {
+                "nbtType": "TAG_Byte",
+                "value": 0
+              }
+            }
+          },
+          "sizeOverLifetime": {
+            "nbtType": "TAG_Compound",
+            "fields": {
+              "_enable": {
+                "nbtType": "TAG_Byte",
+                "value": 0
+              }
+            }
+          },
+          "additionalGPUDataSetting": {
+            "nbtType": "TAG_Compound",
+            "fields": {
+              "_enable": {
+                "nbtType": "TAG_Byte",
+                "value": 0
+              }
+            }
+          },
+          "maxParticles": {
+            "nbtType": "TAG_Int",
+            "value": 2000
+          },
+          "customSpace": {
+            "nbtType": "TAG_String",
+            "value": ""
+          },
+          "startDelay": {
+            "nbtType": "TAG_Compound",
+            "fields": {
+              "data": {
+                "nbtType": "TAG_Compound",
+                "fields": {
+                  "number": {
+                    "nbtType": "TAG_Int",
+                    "value": 0
+                  }
+                }
+              },
+              "type": {
+                "nbtType": "TAG_String",
+                "value": "constant"
+              }
+            }
+          }
+        }
+      },
+      "version": {
+        "nbtType": "TAG_Int",
+        "value": 1
+      }
+    }
+  },
+  "transform": {
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "parent": ""
+  }
+}

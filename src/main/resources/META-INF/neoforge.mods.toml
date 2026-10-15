@@ -1,0 +1,32 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="All Rights Reserved"
+[[mods]]
+modId="photon_collision_helper"
+version="0.1.4"
+displayName="Photon Collision Helper"
+description='''Independent client-side collision emitter extension. No mixins or modifications to Photon. Provides cached block shapes, swept entity collision and visual collision events.'''
+[[dependencies.photon_collision_helper]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.252,21.2)"
+ordering="NONE"
+side="CLIENT"
+[[dependencies.photon_collision_helper]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,1.21.2)"
+ordering="NONE"
+side="CLIENT"
+[[dependencies.photon_collision_helper]]
+modId="photon"
+type="required"
+versionRange="[2.2.8,2.2.9)"
+ordering="AFTER"
+side="CLIENT"
+[[dependencies.photon_collision_helper]]
+modId="ldlib2"
+type="required"
+versionRange="[2.2.41,2.2.43)"
+ordering="AFTER"
+side="CLIENT"
